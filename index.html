@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Fitness</title>
+    <script src="ALLfitness.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen and  (min-width: 451px )and (max-width:4000px) {
+    body{
+        background-color: #000;
+        max-height: 1000px;
+       
+    }
+
+    header {
+        margin-top: 20px;
+        display: flex;
+        position: relative;
+        
+      
+    }
+
+    .inicio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        align-items: center;
+ 
+        width: 100%;
+    }
+
+    h1 {
+        color:#04ca6e;
+        font-size: 70px;
+        font-style: italic;
+    }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+   
+  }h2{
+    
+    color:#ffffff;
+
+    margin-left: 15%;
+    margin-right: 55%;
+    margin-bottom: 20%;
+  
+
+    font-style: italic;
+    font-size:150%;
+
+    flex-wrap: wrap;
+    text-align: center;
+    position: absolute;
+  
+   
+
+
+  }
+  #bot{
+    display: flex;
+}
+    button {
+        background-color:#1a3327;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 11%;
+        margin: 2px;
+        border-radius: 10px;
+        border-color: #00ff88;
+      
+       
+    } button:hover{
+        background-color: #00ff88 ;
+        color: #000;
+        border-color: #000;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+         left: 0;
+         width: 100%;
+         margin-top: 2%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          background-color: #015c31;
+         padding-top: 10px;
+        padding-bottom: 10px;
+        
+         font-size: 15px;
+         color: #ffffff;
+      
+     }
+    img {
+
+        margin-top: 2%;
+        margin-bottom: 10%;
+        width: 65%;
+        margin-left: 35%;
+        height: 500px;
+     
+     
+    }
+}
+
+    @media only screen and (max-width: 450px) and (max-height:950px){
+    body{
+       max-height: 950px;
+    
+        background-color: #000;
+    }
+
+    header {
+       margin-top: 20px;
+        display: flex;
+        
+        
+    }
+
+    .inicio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+
+    h1 {
+        color:#04ca6e;
+        font-size: 200%;
+        font-style: italic;
+    }
+    h2{
+    
+    color:#ffffff;
+
+    margin-left: 7%;
+    margin-right: 53%;
+   margin-top: 50%;
+   
+
+    font-style: italic;
+    font-size:25px;
+
+    flex-wrap: wrap;
+    text-align: center;
+    position: absolute;
+  
+   
+
+
+  }
+    #bot{
+    display: flex;
+}
+    button {
+        background-color:#1a3327;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 15px;
+        margin: 2px;
+        border-radius: 10px;
+        border-color: #00ff88;
+      
+       
+    }button:hover{
+        background-color: #00ff88 ;
+        color: #000;
+        border-color: #000;
+    }
+
+      img {
+
+        margin-top: 30%;
+        margin-bottom: 10%;
+        width: 65%;
+        margin-left: 35%;
+        height: 500px;
+     
+     
+    }
+   
+      
+    footer{
+        position: fixed;
+        bottom: 0;
+         left: 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: #015c31;
+   padding-top: 10px;
+   padding-bottom: 10px;
+width: 100%;
+         font-size: 15px;
+         color: #ffffff;
+       
+     }
+    }
+</style>
+<body>
+    <header>
+        <nav class="inicio">
+            <h1>AllFitness.com</h1>
+            <div id="bot">
+                <button onclick="iniciologin()">Login</button>
+                <button onclick="iniciocadastro()">Cadastrar</button>
+            </div>
+        </nav>
+      
+    </header>
+    <main>
+        <h2>
+            Não deixe para amanhã o que você pode fazer hoje!
+            <br><br>
+           Faça seu Login, calcule sua dieta, e descubra sua periodização de treino para alcançar os melhores resultados.
+            </h2>
+    <img src="img/img1index.jpg">
+</main>
+<footer>
+    <span >ALLfitness.com</span>&copy; 2024
+</footer>
+</body>
+</html>

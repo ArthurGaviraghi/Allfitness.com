@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllFitness - Sua Academia Personalizada</title>
+    <script src="ALLfitness.js"></script>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: #000000;
+            padding: 20px;
+         
+        }
+        .container {
+            text-align: center;
+            max-width: 550px;
+            margin: 0 auto;
+            background-color: #00633a;
+            padding: 55px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-style: italic;
+            color: #00c774;
+            text-align: center;
+           font-size: 200%;
+        }
+        h2 {
+            text-align: center;
+            color: #000000;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AllFitness.com </h1>
+           <h2> Seu treino Personalizado</h2>
+        <form id="academiaForm">
+            <label for="disponibilidade">Disponibilidade (dias/semana):</label>
+            <input type="number" id="disponibilidade" name="disponibilidade" min="1" max="7" required><br>
+            
+            <label for="tempo">Tempo disponível por dia (minutos):</label>
+            <select  required>
+                <option value="">Selecione o objetivo</option>
+                <option value="30">30min</option>
+                <option value="60">45min a 1h</option>
+                <option value="90">1h a 1h30min</option>
+                <option value="120">1h30min a 2h</option>
+                <option value="180">entre 2h e 3h</option>
+            </select><br><br>
+            
+            </select><br><br>
+            
+            <label for="objetivo">Objetivo na academia:</label>
+            <select id="objetivo" name="objetivo" required>
+                <option value="">Selecione o objetivo</option>
+                <option value="emagrecimento">Emagrecimento</option>
+                <option value="ganho-muscular">Ganho muscular</option>
+                <option value="condicionamento">Condicionamento físico</option>
+                <option value="saude">Melhoria da saúde geral</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+            
+           
+        </form>
+        <button type="submit" onclick="alerta()">Enviar</button>
+        <br><br>
+        <h4 id="resposta"></h4><br>
+        <h4 id="resposta1"></h4>
+    </div>
+
+</body>
+</html>
