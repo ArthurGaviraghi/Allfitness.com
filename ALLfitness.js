@@ -60,10 +60,10 @@ function Login(){
 
     if( nome== nomes && senha==senhas){
         alert("Iniciando login...")
-        window.location.href='index3.html'
+        window.location.href='objetivo.html'
     }else{
         alert("Usuario ou senha não existente.")
-        window.location.href="index2.html"
+        window.location.href="login.html"
     }
 }
 
